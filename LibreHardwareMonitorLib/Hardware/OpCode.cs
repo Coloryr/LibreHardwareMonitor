@@ -227,7 +227,7 @@ internal static class OpCode
 #if NETFRAMEWORK
             Assembly assembly = Assembly.Load("Mono.Posix, Version=2.0.0.0, Culture=neutral, " + "PublicKeyToken=0738eb9f132ed756");
 #else
-                Assembly assembly = Assembly.Load("Mono.Posix.NETStandard, Version=1.0.0.0, Culture=neutral");
+            Assembly assembly = Assembly.Load("Mono.Unix, Version=7.1.0.0, Culture=neutral");
 #endif
 
             Type sysCall = assembly.GetType("Mono.Unix.Native.Syscall");
@@ -272,7 +272,7 @@ internal static class OpCode
 #if NETFRAMEWORK
             Assembly assembly = Assembly.Load("Mono.Posix, Version=2.0.0.0, Culture=neutral, " + "PublicKeyToken=0738eb9f132ed756");
 #else
-                Assembly assembly = Assembly.Load("Mono.Posix.NETStandard, Version=1.0.0.0, Culture=neutral");
+            Assembly assembly = Assembly.Load("Mono.Unix, Version=7.1.0.0, Culture=neutral");
 #endif
 
             Type sysCall = assembly.GetType("Mono.Unix.Native.Syscall");
